@@ -16,12 +16,6 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 
 	wander = TRUE
 
-/mob/living/carbon/human/species/human/northern/searaider/brute
-
-/mob/living/carbon/human/species/human/northern/searaider/brute/after_creation()
-	equipOutfit(new /datum/outfit/job/roguetown/human/species/human/northern/searaider/brute)
-
-
 /mob/living/carbon/human/species/human/northern/searaider/retaliate(mob/living/L)
 	var/newtarg = target
 	.=..()
@@ -100,7 +94,6 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 	H.STACON = 4
 	H.STAEND = 15
 	H.STAINT = 1
-	H.STASTR = rand(11,16)
 	if(prob(50))
 		r_hand = /obj/item/rogueweapon/sword
 	else
@@ -112,38 +105,11 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 		H.eye_color = pick("27becc", "35cc27", "000000")
 	H.hair_color = pick ("4f4f4f", "61310f", "faf6b9")
 	H.facial_hair_color = H.hair_color
-	if(H.gender == MALE)
-		H.name = pick( world.file2list("strings/rt/names/human/vikingnamesm.txt") )
-		H.real_name = H.name
+	if(H.gender == FEMALE)
+		H.STASTR = rand(11,12)
+		H.hairstyle = pick("Ponytail (Country)","Braid (Low)", "Braid (Short)", "Messy (Rogue)")
 	else
-		H.name = pick( world.file2list("strings/rt/names/human/vikingnamesf.txt") )
-		H.real_name = H.name
+		H.STASTR = rand(14,16)
+		H.hairstyle = pick("Mohawk","Braid (Low)", "Braid (Short)", "Messy")
+		H.facial_hairstyle = pick("Beard (Viking)", "Beard (Long)", "Beard (Manly)")
 
-/datum/outfit/job/roguetown/human/species/human/northern/searaider/brute/pre_equip(mob/living/carbon/human/H)
-	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
-	shirt = /obj/item/clothing/suit/roguetown/shirt/tunic
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	head = /obj/item/clothing/head/roguetown/helmet
-	if(prob(50))
-		head = /obj/item/clothing/head/roguetown/helmet/horned
-	if(prob(60))
-		mask = /obj/item/clothing/mask/rogue/facemask
-	gloves = /obj/item/clothing/gloves/roguetown/chain
-	H.STASPD = 9
-	H.STACON = 8
-	H.STAEND = 15
-	H.STAINT = 1
-	H.STASTR = rand(15,18)
-	if(prob(50))
-		r_hand = /obj/item/rogueweapon/halberd/bardiche
-	else
-		r_hand = /obj/item/rogueweapon/greatsword
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armoriron
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
-	if(H.gender == MALE)
-		H.name = pick( world.file2list("strings/rt/names/human/vikingnamesm.txt") )
-		H.real_name = H.name
-	else
-		H.name = pick( world.file2list("strings/rt/names/human/vikingnamesf.txt") )
-		H.real_name = H.name

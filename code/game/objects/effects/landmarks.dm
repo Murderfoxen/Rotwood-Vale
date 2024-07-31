@@ -108,12 +108,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	jobspawn_override = list("Vagabond")
 	delete_after_roundstart = FALSE
 
-/obj/effect/landmark/start/mercenarylate
-	name = "Mercenarylate"
-	icon_state = "arrow"
-	jobspawn_override = list("Mercenary")
-	delete_after_roundstart = FALSE
-
 /obj/effect/landmark/start/desertriderlate
 	name = "DesertRiderlate"
 	icon_state = "arrow"
@@ -180,8 +174,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Watchman"
 	icon_state = "arrow"
 
-/obj/effect/landmark/start/royalguard
-	name = "Royal Guard"
+/obj/effect/landmark/start/manorguardsman
+	name = "Man at Arms"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/bogmaster
@@ -326,7 +320,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/lady
-	name = "Consort Candidate"
+	name = "Consort"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/prince
@@ -437,18 +431,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "triballate"
 	icon_state = "arrow"
 	jobspawn_override = list("Tribal Cook", "Tribal Guard", "Chieftain", "Tribal Smith", "Tribal Shaman", "Tribal Villager"/*, "Tribal Slave"*/)
-	delete_after_roundstart = FALSE
-
-/obj/effect/landmark/start/ladylate
-	name = "ladylate"
-	icon_state = "arrow"
-	jobspawn_override = list("Consort Candidate")
-	delete_after_roundstart = FALSE
-
-/obj/effect/landmark/start/noblelate
-	name = "noblelate"
-	icon_state = "arrow"
-	jobspawn_override = list("Noble Guest")
 	delete_after_roundstart = FALSE
 
 // START LANDMARKS FOLLOW. Don't change the names unless

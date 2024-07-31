@@ -29,7 +29,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	display_order = JDO_LORD
 	tutorial = "The Elven Legacy of this city and it's ancient Curse have made the Dreamkeep a strange place to see your line appointed. You take pride in the ancient duty. Perhaps as keen as your ancesters before you - to keep vigil of the dream keep and watch over the wyrd portals. You rule over the beauty and magick of the Dream Dales, and this is your legacy. Show them your wisdom."
 	whitelist_req = FALSE
-	min_pq = 1
+	min_pq = 5
 	max_pq = null
 	give_bank_account = 1000
 	required = TRUE

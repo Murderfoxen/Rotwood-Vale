@@ -61,7 +61,7 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 
 GLOBAL_LIST_INIT(noble_positions, list(
 	"King",
-	"Consort Candidate",
+	"Queen Consort",
 	"Royal Heir",
 	"Guard Captain",
 	"Bailiff",
@@ -82,7 +82,7 @@ GLOBAL_LIST_INIT(garrison_positions, list(
 	"Watchman",
 	"Bog Guard",
 	"Bog Master",
-	"Royal Guard",
+	"Man at Arms",
 	"Dungeoneer",
 	"Gatemaster",
 	"Town Sheriff",
@@ -132,7 +132,6 @@ GLOBAL_LIST_INIT(peasant_positions, list(
 ))
 
 GLOBAL_LIST_INIT(mercenary_positions, list(
-	"Mercenary",
 	"Grenzelhoft Mercenary",
 	"Desert Rider Mercenary",
 	"Veteran",

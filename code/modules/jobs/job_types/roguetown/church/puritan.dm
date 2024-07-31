@@ -1,11 +1,12 @@
 /datum/job/roguetown/puritan
-	title = "Inquisitor"
+	title = "Witcher"
 	flag = PURITAN
 	department_flag = CHURCHMEN
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 5
+	spawn_positions = 5
 	allowed_sexes = list(MALE, FEMALE)
+	spells = list (/obj/effect/proc_holder/spell/invoked/sacred_flame_rogue,new /obj/effect/proc_holder/spell/invoked/projectile/lightningbolt)
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = list(
 		/datum/patron/old_god,
@@ -19,13 +20,13 @@
 		/datum/patron/divine/pestra,
 		/datum/patron/divine/malum,
 	) //gets set to old god anyways
-	tutorial = "As an Inquisitor, the Queen has emboldened your radical sect to root out cultists and the cursed night beasts, using your practice of extracting involuntary 'sin confessions' as a guise to spy on the local populace. Witch Hunters are hired for their extreme paranoia and religious fervor."
+	tutorial = "As an Witcher, you have been tasked with hunting the various monsters that haunt the dream dales. Using Magick, Faith and your Arsenal of Tools; you are the stuff of legends which must fight the forces of darkness."
 	whitelist_req = TRUE
 
 	outfit = /datum/outfit/job/roguetown/puritan
 	display_order = JDO_PURITAN
 	give_bank_account = 36
-	min_pq = 2
+	min_pq = 0
 	max_pq = null
 
 /datum/job/roguetown/puritan/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
@@ -78,7 +79,6 @@
 	ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-	H.cmode_music = 'sound/music/combat_clergy.ogg'
 
 /mob/living/carbon/human/proc/torture_victim()
 	set name = "Extract Confession"

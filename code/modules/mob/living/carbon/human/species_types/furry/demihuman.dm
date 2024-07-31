@@ -4,10 +4,7 @@
 /datum/species/demihuman
 	name = "Half-Kin"
 	id = "demihuman"
-	desc = "Half-Kin, earth-borne, magyck-touched. Many names exist for my race, characterized by our varied appearance. \
-	Wild-Kin are by far the most numerous people due to the fact we are, usually, compatible with almost all other races. \
-	Due to the fact we are so numerous, we are welcome almost anywhere, along with our Wild-Kin sister race \
-	We are average of constitution, strength, and intellegence."
+	desc = "In time you will learn the history of this race"
 	skin_tone_wording = "Ancestry"
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY,MUTCOLORS_PARTSONLY)

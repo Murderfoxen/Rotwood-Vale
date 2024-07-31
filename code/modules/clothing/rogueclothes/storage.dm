@@ -200,7 +200,7 @@
 	if(STR)
 		STR.max_combined_w_class = 21
 		STR.max_w_class = WEIGHT_CLASS_NORMAL
-		STR.max_items = 5
+		STR.max_items = 3
 
 /obj/item/storage/backpack/rogue/attack_right(mob/user)
 	var/datum/component/storage/CP = GetComponent(/datum/component/storage)

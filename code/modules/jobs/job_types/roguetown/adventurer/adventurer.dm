@@ -21,7 +21,7 @@ GLOBAL_VAR_INIT(adventurer_hugbox_duration_still, 3 MINUTES)
 	show_in_credits = FALSE
 	min_pq = -5
 	max_pq = null
-	
+
 	advclass_cat_rolls = list(CTAG_ADVENTURER = 10)
 	PQ_boost_divider = 10
 

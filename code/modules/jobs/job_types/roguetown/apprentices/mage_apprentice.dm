@@ -3,21 +3,21 @@
 	flag = MAGEAPPRENTICE
 	department_flag = APPRENTICES
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 10
+	spawn_positions = 10
 
 	allowed_races = RACES_ALL_KINDS
 	allowed_ages = list(AGE_ADULT)
 
 	tutorial = "Your master once saw potential in you, something you are uncertain if they still do with your recent studies. The path to using magic is something treacherous and untamed, and you are still decades away from calling yourself even a journeyman in the field. Listen and serve, and someday you will earn your hat."
 
-	spells = list(/obj/effect/proc_holder/spell/invoked/projectile/fetch)
+	spells = list(/obj/effect/proc_holder/spell/invoked/projectile/fetch,/obj/projectile/magic/spell/magic_missile)
 	outfit = /datum/outfit/job/roguetown/wapprentice
-	
+
 	display_order = JDO_MAGEAPPRENTICE
 	give_bank_account = TRUE
 
-	min_pq = 3
+	min_pq = 0
 	max_pq = null
 
 /datum/outfit/job/roguetown/wapprentice/pre_equip(mob/living/carbon/human/H)

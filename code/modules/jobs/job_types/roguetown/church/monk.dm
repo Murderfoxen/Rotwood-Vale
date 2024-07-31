@@ -1,10 +1,10 @@
 /datum/job/roguetown/monk
-	title = "Acolyte"
+	title = "Cleric"
 	flag = MONK
 	department_flag = CHURCHMEN
 	faction = "Station"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 10
+	spawn_positions = 10
 
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = ALL_ACOLYTE_PATRONS
@@ -20,7 +20,7 @@
 /datum/outfit/job/roguetown/monk
 	name = "Acolyte"
 	jobtype = /datum/job/roguetown/monk
-	allowed_patrons = list(/datum/patron/divine/pestra, /datum/patron/divine/astrata)
+	allowed_patrons = ALL_ACOLYTE_PATRONS
 
 /datum/outfit/job/roguetown/monk/pre_equip(mob/living/carbon/human/H)
 	..()

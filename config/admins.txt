@@ -4,4 +4,16 @@
 #Ranks will match to those with the same name in admin_ranks.txt, if a match isn't found the user won't be adminned.
 #If SQL-based admin loading is enabled, admins listed here will always be loaded first and will override any duplicate entries in the database
 
-# PSYDON = Host
+SystemCheck = Watcher
+Psydon = Watcher
+MoonMagick = Watcher
+deathws = Watcher
+laughingrabbit = Watcher
+BlackCat055 = Watcher
+Muaru = Watcher
+Wolfskralle4 = Watcher
+RogueRay = Watcher
+Murderfox = Host
+Frozzter = ADMIN
+Jimblob = ADMIN
+The Little Dragon = ADMIN

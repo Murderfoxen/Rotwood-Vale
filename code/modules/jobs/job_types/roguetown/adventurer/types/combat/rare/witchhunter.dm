@@ -1,9 +1,7 @@
 
 /datum/advclass/puritan
-	name = "Witch Hunter"
-	tutorial = "Witch Hunters belong to a special sect of the One-God Church that believe all magyk \
-	use is inherently sinful. They are extremely devoted to hunting necromancers and often preach \
-	to magyk users to end their sinful ways."
+	name = "Witcher"
+	tutorial = "Witchers Hunt the various supernatural threats to the continent if Grimoiria and it's denizens. They find frequent work in Stone Hedge, given it's closeness to magickal phenomena."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/puritan

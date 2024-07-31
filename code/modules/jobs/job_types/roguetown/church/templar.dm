@@ -11,8 +11,8 @@
 	outfit = /datum/outfit/job/roguetown/templar
 	min_pq = 0
 	max_pq = null
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 5
+	spawn_positions = 5
 	display_order = JDO_TEMPLAR
 	give_bank_account = TRUE
 

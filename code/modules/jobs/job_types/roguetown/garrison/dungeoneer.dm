@@ -1,5 +1,5 @@
 /datum/job/roguetown/dungeoneer
-	title = "Dungeoneer"
+	title = "Beastmaster"
 	flag = DUNGEONEER
 	department_flag = GARRISON
 	faction = "Station"
@@ -11,7 +11,7 @@
 
 	display_order = JDO_DUNGEONEER
 
-	tutorial = "Sometimes at night you stare into the vacant room and feel the loneliness of your existence crawl into whatever remains of your loathsome soul. You will never know hunger, thirst or want for anything with the mammons you make: Just as you’ll never forget the sounds a saw makes cutting through the bone, what a drowning man will gurgle out between the blood and teeth strangling his breath. You’re a terrible person, and the carriagemen are going to enjoy walking you down that lonesome path to hell."
+	tutorial = "The elven kingdom has been good to you. Your pets have fed well, and you've never wanted for coin or company in those creetures they permit you. This place has changed you. You're wild - and you yearn for the hunt."
 
 	outfit = /datum/outfit/job/roguetown/dungeoneer
 	give_bank_account = 5

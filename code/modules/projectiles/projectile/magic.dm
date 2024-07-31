@@ -365,7 +365,7 @@
 	. = ..()
 
 /obj/projectile/magic/arcane_barrage
-	name = "arcane bolt"
+	name = "Magic Missile"
 	icon_state = "arcane_barrage"
 	damage = 20
 	damage_type = BURN

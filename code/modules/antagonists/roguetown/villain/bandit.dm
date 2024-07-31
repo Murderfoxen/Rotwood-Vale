@@ -7,7 +7,7 @@
 	antag_hud_type = ANTAG_HUD_TRAITOR
 	antag_hud_name = "bandit"
 	confess_lines = list(
-		"FREEDOM!!!", 
+		"FREEDOM!!!",
 		"I WILL NOT LIVE IN YOUR WALLS!",
 		"I WILL NOT FOLLOW YOUR RULES!",
 	)

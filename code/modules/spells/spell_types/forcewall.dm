@@ -1,19 +1,25 @@
 /obj/effect/proc_holder/spell/targeted/forcewall
 	name = "Forcewall"
 	desc = ""
+	base_icon_state = "" // for spells thats direct activated
+	action_icon_state = "forcewall"
+	overlay_state = "forcewall"
 	school = "transmutation"
 	charge_max = 100
+	releasedrain = 30
+	chargedrain = 1
 	clothes_req = FALSE
-	invocation = "TARCOL MINTI ZHERI"
+	invocation = "SHIELDA MAGIKA"
 	invocation_type = "shout"
-	sound = 'sound/blank.ogg'
 	action_icon_state = "shield"
 	range = -1
 	include_user = TRUE
-	cooldown_min = 50 //12 deciseconds reduction per rank
+	cooldown_min = 900 //12 deciseconds reduction per rank
+	associated_skill = /datum/skill/magic/arcane
 	var/wall_type = /obj/effect/forcefield/wizard
 
 /obj/effect/proc_holder/spell/targeted/forcewall/cast(list/targets,mob/user = usr)
+	playsound(get_turf(user), 'sound/magic/timestop.ogg', 100, TRUE, -1)
 	new wall_type(get_turf(user),user)
 	if(user.dir == SOUTH || user.dir == NORTH)
 		new wall_type(get_step(user, EAST),user)

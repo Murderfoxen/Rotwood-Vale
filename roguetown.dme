@@ -7,7 +7,7 @@
 #define DEBUG
 // END_PREFERENCES
 // BEGIN_INCLUDE
-#include "_maps\_basemap.dm"
+#include "_maps\elfkeep.dm"
 #include "_maps\templates\bog_shack_small.dm"
 #include "_maps\templates\sewers.dm"
 #include "_maps\templates\smalldungeons.dm"
@@ -2206,8 +2206,11 @@
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\donator\dwarfwarrior.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\donator\paladin.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\donator\vaquero.dm"
+#include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\rare\assassin.dm"
+#include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\rare\berserker.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\rare\heartfelt.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\rare\heartfelthand.dm"
+#include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\rare\necromancer.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\rare\sentinel.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\rare\treasurehunter.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\rare\witchhunter.dm"

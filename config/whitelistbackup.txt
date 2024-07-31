@@ -1,0 +1,22 @@
+###############################################################################################
+# Basically, a list of ckeys who make it past user connection                                 #
+# Case is not important for ckey.                                                             #
+###############################################################################################
+
+
+Psydon
+Murderfox
+InferNelKorzky
+AnalWerewolf
+Omnom18
+Classynoto
+PlaugeWalker
+Jimblob
+Butch_Flowers
+Bryar
+JGlitch
+Longbuoy
+AnonymousWoman
+Sir K Lime
+SimpleStorage
+Slenderp123

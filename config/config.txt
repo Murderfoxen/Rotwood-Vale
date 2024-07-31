@@ -14,16 +14,16 @@ $include antag_rep.txt
 # There are various options which are hard-locked for security reasons.
 
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'tgstation' with the name of your choice.
-SERVERNAME Roguetown
+SERVERNAME Dreamkeep.TM
 
 ## Server tagline: This will appear right below the server's title.
-# SERVERTAGLINE A generic TG-based server
+ SERVERTAGLINE H-RP Medieval Grimjoy/Brightdark! (FURRIES WELCOME!)
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
-# SERVERSQLNAME tgstation
+# SERVERSQLNAME elfkeep
 
 ## Station name: The name of the station as it is referred to in-game. If commented out, the game will generate a random name instead.
-STATIONNAME Roguetown
+STATIONNAME Stone Hedge 
 
 ## Put on byond hub: Uncomment this to put your server on the byond hub.
 #HUB

@@ -1,23 +1,23 @@
 /datum/job/roguetown/magician
-	title = "Court Magician"
+	title = "Magician"
 	flag = WIZARD
 	department_flag = COURTIERS
 	selection_color = JCOLOR_COURTIER
 	faction = "Station"
-	total_positions = 1
+	total_positions = 10
 	spawn_positions = 1
 
-	allowed_races = RACES_TOLERATED_UP
+	allowed_races = RACES_ALL_KINDS
 	allowed_sexes = list(MALE, FEMALE)
-	spells = list(/obj/effect/proc_holder/spell/invoked/projectile/fireball/greater, /obj/effect/proc_holder/spell/invoked/projectile/fireball, /obj/effect/proc_holder/spell/invoked/projectile/lightningbolt, /obj/effect/proc_holder/spell/invoked/projectile/fetch)
+	spells = list(/obj/effect/proc_holder/spell/targeted/ethereal_jaunt, /obj/effect/proc_holder/spell/invoked/projectile/fireball, /obj/effect/proc_holder/spell/invoked/projectile/lightningbolt, /obj/effect/proc_holder/spell/invoked/projectile/fetch,/obj/effect/proc_holder/spell/aoe_turf/repulse,/obj/effect/proc_holder/spell/aoe_turf/knock)
 	display_order = JDO_MAGICIAN
 	tutorial = "Your creed is one dedicated to the conquering of the arcane arts and the constant thrill of knowledge. \
-		You owe your life to the Lord, for it was his coin that allowed you to continue your studies in these dark times. \
-		In return, you have proven time and time again as justicar and trusted advisor to their reign."
+		You are one of the Arch-Magicians of Dreamkeeps Magick Academy. You help teach and manage the students of this Academy.\
+		It took you years to become sp esteemed that you could teach at Ravenloft Academy of Magickal Arts."
 	outfit = /datum/outfit/job/roguetown/magician
 	whitelist_req = TRUE
 	give_bank_account = 47
-	min_pq = 2
+	min_pq = 0
 	max_pq = null
 
 /datum/outfit/job/roguetown/magician

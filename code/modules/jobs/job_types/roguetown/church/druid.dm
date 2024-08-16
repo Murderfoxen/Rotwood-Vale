@@ -4,17 +4,22 @@
 	flag = DRUID
 	department_flag = CHURCHMEN
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 5
+	spawn_positions = 5
 
 	allowed_sexes = list(MALE, FEMALE)
+<<<<<<< HEAD
 	allowed_races = RACES_SHUNNED_UP
+=======
+	spells = list (/obj/effect/proc_holder/spell/targeted/shapeshift,)
+	allowed_races = RACES_ALL_KINDS
+>>>>>>> fee74c0e671da4cfc2c2b3e988d3bb847efe3ee4
 	allowed_patrons = ALL_DIVINE_PATRONS //gets set to dendor on the outfit anyways lol
 	outfit = /datum/outfit/job/roguetown/druid
 	tutorial = "You have always been drawn to the wild, and the wild drawn to you. When your calling came, it was from Dendor. Your patron claims dominion over all of nature and promises bounty to those who act in his name to bring balance to His domain. The Bog is the most comfortable place for you, toiling alongside soilsons and soilbrides although sometimes what lies beyond the gates fills your soul with a feral yearning."
 
 	display_order = JDO_DRUID
-	give_bank_account = TRUE
+	give_bank_account = FALSE
 	min_pq = 0
 	max_pq = null
 

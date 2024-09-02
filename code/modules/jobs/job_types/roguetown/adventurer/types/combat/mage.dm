@@ -1,6 +1,5 @@
 /datum/advclass/mage
 	name = "Mage"
-	f_title = "Sorceress"
 	tutorial = "Mages are usually grown-up apprentices of wizards. They are seeking adventure, using their arcyne knowledge to aid or ward off other adventurers."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
@@ -45,31 +44,7 @@
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/lightningbolt)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcewall)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/fetch)
-		if("Arcanist")
-			H.set_blindness(0)
-			to_chat(H, span_warning("You chose to specialize in raw arcane manipulation."))
-			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, pick(0,1,2), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, pick(0,1,2), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/climbing, pick(0,1), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/swords, pick(0,1), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/knives, pick(0,1,2), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/craft/crafting, pick(0,1), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/medicine, pick(0,1), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 4, TRUE)
-			H.change_stat("intelligence", 3)
-			H.change_stat("constitution", 1)
-			H.change_stat("endurance", 1)
-			H.change_stat("speed", 1)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/lightningbolt)
-			H.mind.AddSpell(new /obj/projectile/magic/spell/magic_missile)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcewall)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/fetch)
+
 		if("Enchanter")
 			H.set_blindness(0)
 			to_chat(H, span_warning("You specialize in Enchantments and Mental Magick. Unlike most wizards, this leads to a perculiar study between alchemy and Smithing that tends to have you in higher demand in a city."))
@@ -85,7 +60,6 @@
 			H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, pick(1,2), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, pick(1,2), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, pick(1,2), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/craft/smelting, pick(3), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 3, TRUE)
